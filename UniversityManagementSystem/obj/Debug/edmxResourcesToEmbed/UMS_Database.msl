@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UMS_DatabaseModelStoreContainer" CdmEntityContainer="UMS_DatabaseEntities">
+    <EntitySetMapping Name="AdminInfoes">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.AdminInfo">
+        <MappingFragment StoreEntitySet="AdminInfo">
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="AdminPass" ColumnName="AdminPass" />
+          <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.Course">
+        <MappingFragment StoreEntitySet="Course">
+          <ScalarProperty Name="course_credit" ColumnName="course_credit" />
+          <ScalarProperty Name="course_name" ColumnName="course_name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.Section">
+        <MappingFragment StoreEntitySet="Section">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SectionStudents">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.SectionStudent">
+        <MappingFragment StoreEntitySet="SectionStudent">
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="FinalTerm" ColumnName="FinalTerm" />
+          <ScalarProperty Name="MidTerm" ColumnName="MidTerm" />
+          <ScalarProperty Name="CouID" ColumnName="CouID" />
+          <ScalarProperty Name="SecStudentName" ColumnName="SecStudentName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentInfoes">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.StudentInfo">
+        <MappingFragment StoreEntitySet="StudentInfo">
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="StudentPass" ColumnName="StudentPass" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentRegistrations">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.StudentRegistration">
+        <MappingFragment StoreEntitySet="StudentRegistration">
+          <ScalarProperty Name="SRSec" ColumnName="SRSec" />
+          <ScalarProperty Name="SRCourse" ColumnName="SRCourse" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherInfoes">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.TeacherInfo">
+        <MappingFragment StoreEntitySet="TeacherInfo">
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="TeacherPass" ColumnName="TeacherPass" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherNoticeInfoes">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.TeacherNoticeInfo">
+        <MappingFragment StoreEntitySet="TeacherNoticeInfo">
+          <ScalarProperty Name="TNNotice" ColumnName="TNNotice" />
+          <ScalarProperty Name="TNSec" ColumnName="TNSec" />
+          <ScalarProperty Name="TNCourse" ColumnName="TNCourse" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherRegistrations">
+      <EntityTypeMapping TypeName="UMS_DatabaseModel.TeacherRegistration">
+        <MappingFragment StoreEntitySet="TeacherRegistration">
+          <ScalarProperty Name="TRSecID" ColumnName="TRSecID" />
+          <ScalarProperty Name="TRCourseID" ColumnName="TRCourseID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
